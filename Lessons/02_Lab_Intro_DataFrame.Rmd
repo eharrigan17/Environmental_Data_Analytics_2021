@@ -1,7 +1,7 @@
 ---
 title: "Intro to Data Frames in R"
-author: "Luana Lima"
-date: "1/27/2021"
+author: "Elise Harrigan"
+date: "1/28/2021"
 output: pdf_document
 ---
 

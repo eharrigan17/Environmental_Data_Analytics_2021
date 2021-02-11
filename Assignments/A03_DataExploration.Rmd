@@ -23,12 +23,12 @@ The completed exercise is due on <>.
 
 1. Check your working directory, load necessary packages (tidyverse), and upload two datasets: the ECOTOX neonicotinoid dataset (ECOTOX_Neonicotinoids_Insects_raw.csv) and the Niwot Ridge NEON dataset for litter and woody debris (NEON_NIWO_Litter_massdata_2018-08_raw.csv). Name these datasets "Neonics" and "Litter", respectively. 
 ```{r,  message = FALSE}
-setwd("/Users/eliseharrigan/Desktop/Duke/Spring 2021/EnvDataAnalytics_872/Environmental_Data_Analytics_2021")
 
 library(tidyverse)
 
-Neonics <- read.csv("../Data/Raw/ECOTOX_Neonicotinoids_Insects_raw.csv", stringsAsFactors = TRUE)
-Litter <- read.csv("../Data/Raw/NEON_NIWO_Litter_massdata_2018-08_raw.csv", stringsAsFactors = TRUE)
+Neonics <- read.csv("~/Desktop/Duke/Spring 2021/EnvDataAnalytics_872/Environmental_Data_Analytics_2021/Data/Raw/ECOTOX_Neonicotinoids_Insects_raw.csv", stringsAsFactor=TRUE)
+
+Litter <- read.csv("~/Desktop/Duke/Spring 2021/EnvDataAnalytics_872/Environmental_Data_Analytics_2021/Data/Raw/NEON_NIWO_Litter_massdata_2018-08_raw.csv", stringsAsFactors = TRUE)
 
 ```
 

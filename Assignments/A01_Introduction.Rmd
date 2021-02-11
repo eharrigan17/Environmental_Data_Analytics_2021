@@ -1,6 +1,6 @@
 ---
 title: "Assignment 1: Introduction"
-author: "Student Name"
+author: "Elise Harrigan"
 output: pdf_document
 geometry: margin=2.54cm
 ---
@@ -22,21 +22,21 @@ The completed exercise is due on <>.
 
 1. What are your previous experiences with data analytics, R, and Git? Include both formal and informal training.
 
-> Answer: 
+> Answer: My only experience with R and data analytics is from John Poulsen's Statistics class last fall (Fall 2019). I was introduced to R during this class for the first time. I did a little bit of R over the summer on my first MP project (I've had to make a lot of changes to my MP project due to COVID) and am planning on using R in the coming weeks on my new MP project. I have never used Git. 
 
 2. Are there any components of the course about which you feel confident?
 
-> Answer: 
+> Answer: I have heard great things about the way this course is taught and laid out and so am confident that my analytical skills will be strengthened. 
 
 3. Are there any components of the course about which you feel apprehensive?
 
-> Answer: 
+> Answer: I really struggled to understand R and how to interpret code during Poulsen's class and so am apprehensive about my abilities when it comes to interpreting the data. 
 
 
 ## 2) GitHub
 
 Provide a link below to your forked course repository in GitHub. Make sure you have pulled all recent changes from the course repository  and that you have updated your course README file. 
 
-> Answer: 
+> Answer: https://github.com/eharrigan17/Environmental_Data_Analytics_2021
 
 

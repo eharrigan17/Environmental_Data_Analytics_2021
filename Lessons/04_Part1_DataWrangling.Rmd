@@ -25,9 +25,10 @@ Opening discussion: why might we be interested in long-term observations of temp
 getwd()
 #install.packages(tidyverse)
 library(tidyverse)
-#install.packages(lubridate)
+
+#install.packages("lubridate")
 library(lubridate)
-NTL.phys.data <- read.csv("./Data/Raw/NTL-LTER_Lake_ChemistryPhysics_Raw.csv", stringsAsFactors = TRUE)
+NTL.phys.data <- read.csv("./Data/Raw/NTL-LTER_Lake_ChemistryPhysics_Raw.csv",  stringsAsFactors = TRUE)
 
 colnames(NTL.phys.data)
 head(NTL.phys.data)
@@ -64,13 +65,18 @@ Filtering allows us to choose certain rows (observations) in our dataset.
 
 Here are the relevant commands used in the `filter` function. Add some notes to designate what these commands mean. 
 `==`
+#compare
 `!=`
+#check if different
 `<`
+#less than
 `<=`
 `>`
 `>=`
 `&`
+#multiple conditions to check
 `|`
+#if you want both to be true
 
 ```{r}
 class(NTL.phys.data$lakeid)
@@ -78,8 +84,9 @@ class(NTL.phys.data$depth)
 
 # matrix filtering
 NTL.phys.data.surface1 <- NTL.phys.data[NTL.phys.data$depth == 0,]
+#no rules for rows but can only filter between columns if same value
 
-# dplyr filtering
+# dplyr filtering (put dataset first then what you want to filter)
 NTL.phys.data.surface2 <- filter(NTL.phys.data, depth == 0)
 NTL.phys.data.surface3 <- filter(NTL.phys.data, depth < 0.25)
 
