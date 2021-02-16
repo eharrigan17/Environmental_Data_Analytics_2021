@@ -74,9 +74,9 @@ Here are the relevant commands used in the `filter` function. Add some notes to 
 `>`
 `>=`
 `&`
-#multiple conditions to check
+#multiple conditions to check if true
 `|`
-#if you want both to be true
+#if you want one or the other to be true
 
 ```{r}
 class(NTL.phys.data$lakeid)

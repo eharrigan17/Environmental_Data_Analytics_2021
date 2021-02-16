@@ -116,5 +116,7 @@ ex6<- NTL.phys.data %>%
     names_from = depth, 
     values_from = temperature_C
   )
+
+
 ```
 
