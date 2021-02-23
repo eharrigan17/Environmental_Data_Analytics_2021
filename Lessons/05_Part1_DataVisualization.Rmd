@@ -28,7 +28,7 @@ PeterPaul.chem.nutrients <-
   read.csv("./Data/Processed/NTL-LTER_Lake_Chemistry_Nutrients_PeterPaul_Processed.csv", stringsAsFactors = TRUE)
 PeterPaul.chem.nutrients.gathered <-
   read.csv("./Data/Processed/NTL-LTER_Lake_Nutrients_PeterPaulGathered_Processed.csv", stringsAsFactors = TRUE)
-EPAair <- read.csv("./Data/Processed/EPAair_O3_PM25_NC1819_Processed.csv", stringsAsFactors = TRUE)
+EPAair <- read.csv("./Data/Processed/EPAair_O3_PM25_NC1718_Processed.csv", stringsAsFactors = TRUE)
 
 EPAair$Date <- as.Date(EPAair$Date, format = "%Y-%m-%d")
 PeterPaul.chem.nutrients$sampledate <- as.Date(PeterPaul.chem.nutrients$sampledate, format = "%Y-%m-%d")
@@ -70,13 +70,14 @@ Here are some commonly used aesthetic types that can be manipulated in ggplot:
 
 * color
 * fill
-* shape
-* size
-* transparency
+* shape #shape of point
+* size # size of point
+* transparency #can make them transparent
 
 ### Plotting continuous variables over time: Scatterplot and Line Plot
 
 ```{r, fig.height = 3, fig.width = 4, warning = FALSE}
+
 # Scatterplot
 ggplot(EPAair, aes(x = Date, y = Ozone)) + 
   geom_point()
@@ -97,6 +98,7 @@ PMplot <-
   ggplot(EPAair, aes(x = Month, y = PM2.5, shape = as.factor(Year), color = Site.Name)) +
   geom_point()
 print(PMplot)
+#^this plot wasn't telling us much so trying facets (the one below.) 
 
 # Separate plot with facets
 PMplot.faceted <-
@@ -175,7 +177,7 @@ print(Nutrientplot3)
 Nutrientplot4 <-
   ggplot(PeterPaul.chem.nutrients.gathered, aes(x = lakename, y = concentration)) +
   geom_dotplot(aes(color = nutrient, fill = nutrient), binaxis = "y", binwidth = 1, 
-               stackdir = "center", position = "dodge", dotsize = 2) #
+               stackdir = "center", position = "dodge", dotsize = 2)
 print(Nutrientplot4)
 
 # Violin plot
@@ -194,6 +196,7 @@ Nutrientplot6 <-
   geom_freqpoly(aes(x = no23), color = "royalblue") +
   geom_freqpoly(aes(x = po4), color = "red") 
 print(Nutrientplot6)
+#^using the gathered dataset (pivot_wider/pivot_longer) would be a better dataset to use. 
 
 # Using a gathered dataset
 Nutrientplot7 <-   
