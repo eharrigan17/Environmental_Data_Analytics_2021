@@ -1,5 +1,5 @@
 ---
-title: "Assignment 7: GLMs (Linear Regressios, ANOVA, & t-tests)"
+title: "Assignment 6: GLMs (Linear Regressios, ANOVA, & t-tests)"
 author: "Elise Harrigan"
 output: pdf_document
 geometry: margin=2.54cm
